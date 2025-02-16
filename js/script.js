@@ -31,10 +31,31 @@
 
 //6. How do you merge two arrays?
 
+// const arr1 = [1,2,3,4,5,6,7,8,9,10];
+// const arr2 = ["Aditya", "Aryan", "Subham"];
+
+
+// const mergedArray = [...arr1, ...arr2];
+// const mergedArray = arr1.concat(arr2);
+
+// console.log(mergedArray);
+
+
 
 
 //7. How do you check if an element exists in an array?
+// const arr = [1];
 
+// function checkArray(arr){
+//     if(arr.length > 0){
+//         console.log("An element exist in an array");
+        
+//     }else{
+//        console.log("An element doesn't exist in an array");
+//     }
+// }
+
+// checkArray(arr);
 
 
 // 8.How do you reverse an array?
@@ -52,3 +73,48 @@
 
 // 10.How do you sort an array in ascending order?
 
+// const names = ["Aditya", "Rahul", "Neha", "Subham"];
+// console.log(names.sort().reverse());
+
+
+
+
+//setTimeout()
+// const container = document.querySelector("#container");
+
+// const btn = document.querySelector("#button");
+
+// btn.addEventListener("click",(event)=>{
+//    setTimeout(() => {
+        // container.classList.toggle("bg-red-500")
+    // }, 2000);
+
+//     console.log(event);
+    
+
+// })
+
+//setIntervel()
+
+// setInterval(() => {
+//     console.log("Hello World!");
+    
+// }, 2000);
+
+
+
+//preventing event
+
+const link = document.querySelector("#link");
+
+
+link.addEventListener("click",(event)=>{
+  event.preventDefault();
+})
+
+
+//propagration
+
+link.addEventListener("click",(event)=>{
+  event.stopPropagation();
+})
